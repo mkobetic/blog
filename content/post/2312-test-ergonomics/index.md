@@ -7,7 +7,7 @@ tags:
   - coin
 ---
 
-I've had this topic in the back of my mind for a while and recent [talk by Russ Cox](https://research.swtch.com/testing) brought it back to the foreground. As with any of Russ' writing it is well worth your while, I highly recommend you check it out. Of course he makes most of the points I wanted to make and then some, so my remarks will be mostly just reactions to his talk.
+I've had this topic in the back of my mind for a while and recent [talk by Russ Cox](https://research.swtch.com/testing) brought it back to the foreground. As with any of Russ' writing it is well worth your while, I highly recommend you check it out. Of course he makes most of the points I wanted to make and then some, so my remarks will be mostly just a reaction to his talk.
 
 What got me thinking about this topic is another example of what he calls "script-based tests". I ran across it studying [ledger-cli](https://ledger-cli.org). The [test directive](https://ledger-cli.org/doc/ledger3.html#Writing-Tests) is genius in its simplicity and pure ergonomics. A test is a simple text file consisting of
 
@@ -55,7 +55,7 @@ end test
 
 This may seem somewhat trivial in terms of the implementation aspects, but I think its power stems exactly from that simplicity and is amplified by the minimalism and ease of writing these tests. Any competent user of the tool can write a test, no need to be a programmer. I find that brilliant.
 
-I absolutely agree with Russ that ergonomics and quality of the test suite is paramount. What I mean by ergonomics is 
+I absolutely agree with Russ that ergonomics of the test suite is paramount. What I mean by ergonomics is 
 
 1. The tests are easy to read and write, brevity is a big part of this. If most of the test is long lines of boilerplate code, that's not readable even if it spells things out very clearly. It wastes too much mental energy.
 
