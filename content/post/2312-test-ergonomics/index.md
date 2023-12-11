@@ -1,6 +1,10 @@
 ---
 title: Test Ergonomics
 date: 2023-12-11
+tags:
+  - programming
+  - go
+  - coin
 ---
 
 I've had this topic in the back of my mind for a while and recent [talk by Russ Cox](https://research.swtch.com/testing) brought it back to the foreground. As with any of Russ' writing it is well worth your while, I highly recommend you check it out. Of course he makes most of the points I wanted to make and then some, so my remarks will be mostly just reactions to his talk.
