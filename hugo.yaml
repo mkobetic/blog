@@ -3,7 +3,7 @@ languageCode: en-us
 title: mkobetic
 theme: hugo-texify2
 params:
-  title: mkobetic
+  title: Martin Kobetič
   footnote: |
     <a class=link href=/index.xml>RSS</a> |
     <a class=link href=https://creativecommons.org/licenses/by/4.0/ target=_blank rel=noopener>CC BY 4.0</a>

@@ -6,7 +6,16 @@
     <description>Recent content in Posts on mkobetic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mkobetic.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mkobetic.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Ergonomics</title>
+      <link>https://mkobetic.github.io/post/2312-test-ergonomics/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mkobetic.github.io/post/2312-test-ergonomics/</guid>
+      <description>I&amp;rsquo;ve had this topic in the back of my mind for a while and recent talk by Russ Cox brought it back to the foreground. As with any of Russ&amp;rsquo; writing it is well worth your while, I highly recommend you check it out. Of course he makes most of the points I wanted to make and then some, so my remarks will be mostly just reactions to his talk.</description>
+    </item>
+    
     <item>
       <title>Plaintext Accounting</title>
       <link>https://mkobetic.github.io/post/2311-plaintext-accounting/</link>

@@ -1,5 +1,7 @@
+build:
+	hugo
+
 run:
 	hugo server -D
 
-build:
-	hugo
+.PHONY: build run
