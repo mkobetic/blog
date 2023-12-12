@@ -53,7 +53,7 @@ test balance -b 2000/01/02
 end test
 ```
 
-This may seem somewhat trivial in terms of the implementation aspects, but I think its power stems exactly from that simplicity and is amplified by the minimalism and ease of writing these tests. Any competent user of the tool can write a test, no need to be a programmer. I find that brilliant.
+This may seem somewhat trivial in terms of the implementation aspects, but I think its power stems exactly from that simplicity and is amplified by the minimalism and ease of writing these tests. Any competent user of the tool can write a test, no need to be a programmer. You don't need a development environment either, if you can run ledger-cli or coin, you can write and run tests. I find that brilliant.
 
 I absolutely agree with Russ that ergonomics of the test suite is paramount. What I mean by ergonomics is 
 
