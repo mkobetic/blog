@@ -1,6 +1,6 @@
-+++
-title = 'Inline video test'
-draft = true
-+++
+---
+title: Inline video test
+draft: true
+---
 
 <video controls autoplay src="location-navigation.webm"/>

@@ -1,6 +1,7 @@
 build:
 	hugo
 
+# Start a dev server with draft posts as well
 run:
 	hugo server -D
 
