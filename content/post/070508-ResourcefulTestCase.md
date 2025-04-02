@@ -5,7 +5,7 @@ tags:
   - smalltalk
 ---
 
-(Republished from [Cincom Smalltalk Tech Tips] (https://csttechtips.wordpress.com/2007/05/))
+(Republished from [Cincom Smalltalk Tech Tips](https://csttechtips.wordpress.com/2007/05/))
 
 The core SUnit package provides support for shared test resources via the TestResource class. A TestCase that wants to use TestResources is expected to list all its resource classes in its class side #resources method. Individual test case methods then access the resources via the resource classes, usually as default, singleton instances. That provides potentially interesting levels of flexibility, however the access to the resources themselves is not exactly convenient. In my experience vast majority of cases involving TestResources either keep repeating the ‘self resources first default blah’ incantation over and over again, where blah is the name of the real resource the case cares about which is being managed in a blah instance variable of the corresponding TestResource subclass. A more palatable way is adding the same instance variables to the TestCase subclass as well and copying the resource pieces there in the TestCase>>setUp method. Then you can access the resources directly as instance variables in your test case methods. This way the test methods are clean again, but when you want to employ test resources you still have to go through the following sequence of steps:
 
