@@ -1,7 +1,6 @@
 ---
 title: 'Self-contained Interactive Viewers'
-date: 2025-03-29
-draft: true
+date: 2025-04-06
 tags:
   - plaintextaccounting
   - typescript
@@ -20,13 +19,13 @@ Recently I've started experimenting with the same approach for an interactive vi
 
 
 It is a fairly bare bones html with barely any styling, partly because I wanted to see what the browsers offer out of the box and partly because I don't know any better. I also like to keep the complexity and dependencies to a minimum. That said I wanted to include charting capability and was intrigued by D3.js for a while, so D3 is the hammer I'm using for all the nails. 
-(This feels like a good place to throw in a gratuitous AI generated image, so here you go.)
 
-![](thor2.jpeg) 
+![](aggregated-register-chart.png)
 
 There's a lot of [room for improvement](https://github.com/mkobetic/coin/blob/master/TODO.md#coin2html), both in terms of design/convenience and capability. However I'm reasonably happy with how it's shaping up and I have yet to hit any obstacle in terms of being able to do what I want. I am definitely duplicating parts of the `register` and `balance` commands, but with slightly different twist and aim, so I think that is OK. There are still many things that only the command-line will do and that I don't intend to bring over. The way I look at it is that different use-cases call for different type of interface.
 
-Regardless of the particulars of my little experiment the main thing I want to highlight is that I like the self-contained HTML file. I started committing it along with the rest of my ledger, so the viewer is always available with the data that it came from. I just regenerate it when I make updates. I've added a file URL to my browser bookmarks and it's always just a click away. No need to start a server or to keep one running permanently. I'm also contemplating generating subsets of the ledger to share with others, e.g. imagine sharing the current year of your business books with your accountant. All the other party needs to use it is a web browser, nothing to install, you don't even need internet, it would be frictionless.
+Regardless of the particulars of my little experiment the thing I want to emphasize is the convenience of the self-contained HTML file. I started committing it along with the rest of the ledger, so the viewer is always available with the data that it came from. I just regenerate it when I make updates. A file URL in browser bookmarks makes it always just a click away. No need to start a server or to keep one running permanently. I'm also contemplating generating viewers for subsets of the ledger, e.g. imagine sharing the current year of your small business books with your accountant. All that's needed to use it is a web browser, nothing to install, you don't even need internet, it would be frictionless.
 
 There are other applications of this approach that I'm thinking about. I have another hobby project for rendering GPS tracks as SVG images ([GPX](https://github.com/mkobetic/gpx)). I'm also analyzing the track, splitting it into segments and compiling stats about it. Being able to interactively zoom in on particular segments (very much like the flame graphs do) could be quite useful.
 
+![](gpx-map.png)
