@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <p id="result" style="font-family: monospace"></p>
+  </body>
+  <script>
+    function toChar(n) {
+      if (n < 10) return String.fromCharCode(48 + n);
+      if (n < 35) return String.fromCharCode(55 + n);
+      if (n < 60) return String.fromCharCode(62 + n);
+      return "?";
+    }
+    let count = 0;
+    function fibonacci(n, prefix) {
+      if (n < 1) {
+        count++;
+        return prefix + "\n";
+      }
+      prefix = prefix + toChar(n);
+      if (n <= 2) {
+        count++;
+        return prefix + "\n";
+      }
+      return fibonacci(n - 1, prefix) + fibonacci(n - 2, prefix);
+    }
+    // document.getElementById("result").innerText = fibonacci(25, "");
+    fibonacci(20, "");
+    document.getElementById("result").innerText = `${count}`;
+  </script>
+</html>
