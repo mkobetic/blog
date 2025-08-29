@@ -82,4 +82,6 @@ Another thing to note in this profile is that the maximum depth of the fibonacci
 
 I should note that I had to tweak the script for Firefox, because it struggled with rendering the textual "flame graph" result of the function. At fib(30) the result is over 800k lines long, and the Firefox renderer was choking on it. So I removed the rendering bit and was able to get the profile shown above. Also while the Firefox profile looks better than Chrome's, it does suffer from the bad samples issue just to a lesser degree. For what it's worth in my experience the gaps seem to be often associated with GC spans.
 
-In conclusion, keep the bad sample issue in mind when you're looking at the Performance flame graph from your browser's Dev Tools. It can easily fool you! 
+In conclusion, what a span in the flame graph represents is somewhat vague and arbitrary. It means that in that span of time all samples included a stack frame of the referenced function (at that position in the stack). However those could all be from a single function call, or from multiple different calls. Similarly the same function call could be spread across multiple adjacent spans. So it is dubious to assume that it represents entire duration of a single function call. Consequently the timing associated with the span just says that this amount of time was spent in calls to given function, nothing about how long the calls took or how many there were.
+
+So keep this in mind when you're looking at the Performance flame graph from your browser's Dev Tools. It can easily fool you! 
