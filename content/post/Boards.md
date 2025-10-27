@@ -1,0 +1,1 @@
+https://www.electromaker.io/blog/article/ultimate-guide-to-arduino-nano-every-model-reviewed-compared
