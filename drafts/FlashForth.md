@@ -1,12 +1,4 @@
----
-title: FlashForth
-date: 2025-09-27
-tags:
-  - embedded
-  - forth
-  - arduino
-  - Atmega2560
----
+
 
 
 # https://flashforth.com/index.html

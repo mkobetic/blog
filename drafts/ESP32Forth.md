@@ -1,13 +1,3 @@
----
-title: ESP32Forth
-date: 2025-09-27
-tags:
-  - embedded
-  - forth
-  - arduino
-  - esp32
----
-
 # ESP32Forth
 * https://esp32forth.appspot.com (https://github.com/flagxor/ueforth)
 * written in very readable C
