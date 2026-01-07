@@ -1,7 +1,6 @@
 ---
 title: Bootloaders vs Forth (ATmega 2560)
 date: 2026-01-07
-draft: true
 tags:
   - embedded
   - forth
