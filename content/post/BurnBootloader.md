@@ -10,11 +10,11 @@ tags:
 ---
 
 
-Bootloaders are probably not the first thing one would recommend a beginner to dive into, but if you're dead set on running Forth on your board, you'll have to contend with it whether you want to or not. The details discussed below are from Atmel Atmega MCUs (I am using ATmega 2560), but the same concepts likely apply to other MCU families as well.
+Bootloaders are probably not the first thing one would recommend an embedded programming beginner to dive into, but if you're dead set on running Forth on your board, you'll have to contend with it whether you want to or not. The details discussed below are from Atmel Atmega MCUs (I was using ATmega 2560), but the same concepts likely apply to other MCU families as well.
 
 # What is a bootloader
 
-Bootloader is a bit of code that is pre-loaded into the MCUs flash memory and is the first thing that runs when the MCU starts up. In that sense it's no different than any other embedded application but it generally has a specialized purpose an usually coexists side by side with the actual application. On learning/hobby boards like the Arduinos its  purpose is to allow programming application code into the MCU's flash memory without external programming hardware. The boards usually have a USB port that is connected to one of MCUs serial interfaces (UART). The bootloader watches the interface for communication using a programming protocol. The bootloader of my ATMega 2560 uses stk500 protocol. If the protocol is not detected by the bootloader it will let the previously programmed application run.
+Bootloader is a bit of code that is pre-loaded into the MCUs flash memory and is the first thing that runs when the MCU starts up. In that sense it's no different than any other embedded application but it generally has a specialized purpose and usually coexists side by side with the actual application. On learning/hobby boards like the Arduinos its  purpose is to allow programming application code into the MCU's flash memory without external programming hardware. The boards usually have a USB port that is connected to one of MCUs serial interfaces (UART). The bootloader watches the interface for communication using a programming protocol. The bootloader of my ATMega 2560 uses stk500 protocol. If the protocol is not detected by the bootloader it will let the previously programmed application run.
 
 To program the MCU you simply connect the board to a computer with a standard USB cable. When you somehow create the binary code to write to MCU's flash memory, a tool like avrdude that speaks the programming protocol supported by the bootloader can get it there.
 
